@@ -12,6 +12,8 @@ public class Player {
     protected   String profile = "";
     protected   String romance = "";
 
+    protected int HP, Dmg;
+
     /**
      *
      */
