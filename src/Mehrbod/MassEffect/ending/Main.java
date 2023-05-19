@@ -10,11 +10,7 @@ public abstract class Main {
 
 
     public static void main(String[] args) {
-        init();
-        prologue();
-        actone();
-
-
+        new Story();
         // Don't fear the reapers
         // new Fighting();
     }
