@@ -1,5 +1,7 @@
 package Mehrbod.MassEffect.ending;
 
+import java.util.concurrent.TimeUnit;
+
 import static Mehrbod.MassEffect.ending.Master.*;
 
 public class Story {
@@ -7,9 +9,11 @@ public class Story {
     public Story(){
         init();
         prologue();
-        actone();
+        actOne();
+        actTwo();
     }
     public static void prologue(){
+        //TimeUnit.SECONDS.sleep(1);
         System.out.println("""
                 “Wake up!”
                 “We did it.”
@@ -24,15 +28,13 @@ public class Story {
                 “Wake up!”
                 """);
     }
-    public static void actone() {
+    public static void actOne() {
         System.out.println("""
                 You looked awful. You were bleeding, beat up and unconscious. The elevator brought you to this room. If you can even call it a room.
                 “Wake up!”
                 I said as I stood above you.
                 """);
-        String ans = "";
 
-        //while (ans.equals("")) {
         System.out.println("""
                 1) Who are you? Where am I?
                 2) Did the Normandy make it?
@@ -59,7 +61,7 @@ public class Story {
                 “But why? After all these years. Why? I did everything I could to stop you but I never understood why the reapers are doing this.”
                 “Does it really matter now?”
                 """);
-        ans = "";
+
 
         System.out.println("""
                 1) No. I just want to stop the reapers and bring peace to the galaxy.
@@ -71,5 +73,26 @@ public class Story {
             case (2) -> System.out.println("I'm not sure you are ready for it but Survival. \n");
         }
 
+    }
+
+    public static void actTwo(){
+
+        System.out.println("you see a Husk rushing towards you what do you do? \n");
+        System.out.println("""
+                1) Let it kill you and end this suffering.
+                2) Get your pistol and shoot the Husk.
+                """);
+        //System.out.println(player.name);
+
+        input = new Input(2);
+        switch (input.playerChoice) {
+            case (1):
+                System.out.println("The husk run towards you. With no hesitation it attacks you relentlessly. There is no emotion. " +
+                        "Like its machines controlling it, it just does what is supposed to do. It eats your body alive. Rips you muscle and bones. Its a terrible death. \n");
+                break;
+            case (2):
+
+                break;
+        }
     }
 }
