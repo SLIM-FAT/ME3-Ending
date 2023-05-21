@@ -13,20 +13,31 @@ public class Story {
         actTwo();
     }
     public static void prologue(){
-        //TimeUnit.SECONDS.sleep(1);
-        System.out.println("""
-                “Wake up!”
-                “We did it.”
-                “We did.”
-                “It’s quite a view.”
-                “Best seats in the house.”
-                “God… Feels like years since I just sat down”
-                “I think you earned a rest.”
-                “You did well son. I am proud of you.”
-                “Thank you sir. Anderson? Stay with me.”
-                “You need to wake up.”
-                “Wake up!”
-                """);
+
+        waiting(3);
+
+        System.out.println("“Wake up!”");
+        waiting(1);
+        System.out.println("“We did it.”");
+        waiting(1);
+        System.out.println("“We did.”");
+        waiting(1);
+        System.out.println("“It’s quite a view.”");
+        waiting(1);
+        System.out.println("“Best seats in the house.”");
+        waiting(2);
+        System.out.println("“God… Feels like years since I just sat down”");
+        waiting(1);
+        System.out.println("“I think you earned a rest.”");
+        waiting(1);
+        System.out.println("“You did well son. I am proud of you.”");
+        waiting(1);
+        System.out.println("“Thank you sir. Anderson? Stay with me.”");
+        waiting(1);
+        System.out.println("“You need to wake up.”");
+        waiting(1);
+        System.out.println("“Wake up!”");
+        waiting(1);
     }
     public static void actOne() {
         System.out.println("""
