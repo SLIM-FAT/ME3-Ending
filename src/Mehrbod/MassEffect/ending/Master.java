@@ -1,6 +1,5 @@
 package Mehrbod.MassEffect.ending;
 
-
 import java.util.concurrent.TimeUnit;
 
 /**
@@ -23,11 +22,10 @@ public abstract class Master { // This is the class that runs the game basically
                 new Story();
                 break;
             case (2):
-                System.out.println("You are a ... a ... a PUSSY! (in Walter Jr voice");
+                System.out.println("You are a ... a ... a PUSSY! (in Walter Jr voice)");
         }
     }
     public static void waiting(long time){
-
         try {
             TimeUnit.SECONDS.sleep(time);
         } catch (InterruptedException e) {

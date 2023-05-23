@@ -16,9 +16,7 @@ public abstract class Enemy {
         }
     }
 
-    protected void omnigel(int healPoints){
-        if (HP + healPoints > MAX_HP) HP = MAX_HP;
-    }
+
 
     private void die() {
         HP = 0;

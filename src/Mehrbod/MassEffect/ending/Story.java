@@ -1,6 +1,6 @@
 package Mehrbod.MassEffect.ending;
 
-import java.util.concurrent.TimeUnit;
+import Mehrbod.MassEffect.ending.Enemies.Husk;
 
 import static Mehrbod.MassEffect.ending.Master.*;
 
@@ -8,8 +8,8 @@ public class Story {
 
     public Story(){
         init();
-        prologue();
-        actOne();
+        //prologue();
+       // actOne();
         actTwo();
     }
     public static void prologue(){
@@ -100,9 +100,14 @@ public class Story {
             case (1):
                 System.out.println("The husk run towards you. With no hesitation it attacks you relentlessly. There is no emotion. " +
                         "Like its machines controlling it, it just does what is supposed to do. It eats your body alive. Rips you muscle and bones. Its a terrible death. \n");
+                System.out.println("YOU DIED!");
+                endGame();
                 break;
             case (2):
-
+                System.out.println("haven't written anything yet");
+                Fight combat = new Fight();
+                combat.add(new Husk());
+                combat.runFight();
                 break;
         }
     }

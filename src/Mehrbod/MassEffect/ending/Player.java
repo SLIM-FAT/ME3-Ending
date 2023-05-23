@@ -10,9 +10,8 @@ public class Player {
     protected   String name = "";
     protected   String history = "";
     protected   String profile = "";
-    protected   String romance = "";
-
-    protected int HP, Dmg;
+    protected int player_MAXHP;
+    protected int player_HP, player_Dmg;
 
     /**
      *
@@ -106,4 +105,12 @@ public class Player {
         System.out.println("\n");
         System.out.println("\n");
     }
+
+    public int getPlayer_HP() {
+        return player_HP;
+    }
+    protected void omnigel(int healPoints){
+        if (player_HP + healPoints > player_MAXHP) player_HP = player_MAXHP;
+    }
+
 }
