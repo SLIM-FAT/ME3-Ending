@@ -7,11 +7,12 @@ import static Mehrbod.MassEffect.ending.Master.*;
  *
  */
 public class Player {
-    protected   String name = "";
-    protected   String history = "";
-    protected   String profile = "";
+    protected String name = "";
+    protected String history = "";
+    protected String profile = "";
     protected int player_MAXHP;
-    protected int player_HP, player_Dmg;
+    protected int player_HP;
+    protected int player_Dmg = 12;
 
     /**
      *
@@ -108,6 +109,12 @@ public class Player {
 
     public int getPlayer_HP() {
         return player_HP;
+    }
+    private void die() {
+        player_HP = 0;
+        System.out.println("YOU DIED!");
+        System.out.println(this.getClass().getSimpleName() + " killed you!");
+        endGame();
     }
     protected void omnigel(int healPoints){
         if (player_HP + healPoints > player_MAXHP) player_HP = player_MAXHP;

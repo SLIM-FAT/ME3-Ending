@@ -9,7 +9,7 @@ public abstract class Enemy {
     protected int getHealth(){
         return HP;
     }
-    protected void dealingDamage(int damage){
+    protected void gettingDamage(int damage){
         if(damage >= HP) die();
         else {
             HP -= damage;
@@ -20,8 +20,7 @@ public abstract class Enemy {
 
     private void die() {
         HP = 0;
-        System.out.println("YOU DIED!");
-        System.out.println(this.getClass().getSimpleName() + " killed you!");
-        endGame();
+        System.out.println("You killed " + this.getClass().getSimpleName());
+        Fight.fightsNotOver = false;
     }
 }

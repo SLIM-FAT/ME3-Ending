@@ -10,11 +10,13 @@ public class Fight {
 
     private Enemy enemy;
 
-    boolean fightsNotOver = true;
+    static boolean fightsNotOver;
     int headChance = 50;
     int bodyChance = 85;
 
-    //boolean isHit;
+    public Fight(){
+        fightsNotOver = true;
+    }
 
     public void add(Enemy newEnemy) {
         enemy = newEnemy;
@@ -40,18 +42,23 @@ public class Fight {
             input = new Input(2);
             switch (input.playerChoice){
                 case(1):
-                    if(isHit(headChance))
-                    enemy.dealingDamage(player.player_Dmg*2);
+                    if(isHit(headChance)) {
+                        enemy.gettingDamage(player.player_Dmg * 2);
+                        System.out.println("Enemies health is :" + enemy.getHealth());
+                    }
                     else
                         System.out.println("You missed!");
                     break;
                 case (2):
-                    if(isHit(bodyChance))
-                        enemy.dealingDamage(player.player_Dmg);
+                    if(isHit(bodyChance)) {
+                        enemy.gettingDamage(player.player_Dmg);
+                        System.out.println("Enemies health is :" + enemy.getHealth());
+                    }
                     else
                         System.out.println("You missed!");
                     break;
             }
+            // this is where the npcCombat happens
         }
     }
 
