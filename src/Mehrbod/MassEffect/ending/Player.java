@@ -17,6 +17,19 @@ public class Player {
     /**
      *
      */
+    public Player(String name, String history, String profile){
+        this.name = name;
+        this.history = history;
+        this.profile = profile;
+
+        System.out.println("Profile reconstruction complete.");
+        System.out.println("\n");
+        System.out.println("\n");
+        System.out.println("\n");
+        System.out.println("*********************************** PROLOGUE ***********************************");
+        System.out.println("\n");
+        System.out.println("\n");
+    }
     public Player(){
 
         Scanner scanner = new Scanner(System.in);

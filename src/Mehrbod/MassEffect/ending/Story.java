@@ -8,7 +8,7 @@ public class Story {
 
     public Story(){
         init();
-        //prologue();
+        prologue();
        // actOne();
         actTwo();
     }

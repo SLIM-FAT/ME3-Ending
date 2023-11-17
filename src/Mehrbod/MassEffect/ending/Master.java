@@ -7,7 +7,7 @@ import java.util.concurrent.TimeUnit;
  */
 public abstract class Master { // This is the class that runs the game basically.
 
-    protected static final Player player = new Player();
+    protected static final Player player = new Player("mehrbod","soldier", "colonist");
     static Input input;
     public static void init() {
 
@@ -29,7 +29,7 @@ public abstract class Master { // This is the class that runs the game basically
         try {
             TimeUnit.SECONDS.sleep(time);
         } catch (InterruptedException e) {
-            throw new RuntimeException("what the fuck is this?");
+            throw new RuntimeException("what the fuck is this? RuntimeException?");
         }
     }
 
