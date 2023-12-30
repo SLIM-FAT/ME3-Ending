@@ -1,13 +1,21 @@
 package Mehrbod.MassEffect.ending;
-
 import Mehrbod.MassEffect.ending.Enemies.Husk;
-
 import static Mehrbod.MassEffect.ending.Master.*;
 
+/**
+ * The first class to run when starting the game.
+ * It contains most of the dialogs and carries the overall story structure.
+ * @author  Mehrbod Mehrabi
+ */
 public class Story {
 
+    //TODO: Story docs are not completed.
+    /**
+     * this Constructor calls {@link Master}.
+     * It also calls all the methods in this class and goes through the story.
+     */
     public Story(){
-        init();
+        init(); // Calls master and creates player character.
         prologue();
        // actOne();
         actTwo();

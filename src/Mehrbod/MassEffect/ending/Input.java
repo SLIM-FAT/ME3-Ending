@@ -1,7 +1,7 @@
 package Mehrbod.MassEffect.ending;
 import java.util.Objects;
 import java.util.Scanner;
-
+//TODO: Write the complete documentation for Input from ground up.
 public class Input {
     Scanner scn = new Scanner(System.in);
     String playerInput;

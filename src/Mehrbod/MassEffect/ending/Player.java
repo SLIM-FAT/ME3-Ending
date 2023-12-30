@@ -1,10 +1,13 @@
 package Mehrbod.MassEffect.ending;
-
 import java.util.Scanner;
 import static Mehrbod.MassEffect.ending.Master.*;
 
+//TODO: Finish player docs.
 /**
+ * The Player class.
+ * For some weird reasons, I thought it was a good idea to run the prologue here instead of {@link Story}.
  *
+ * @author  Mehrbod Mehrabi
  */
 public class Player {
     protected String name = "";
@@ -15,7 +18,7 @@ public class Player {
     protected int player_Dmg = 12;
 
     /**
-     *
+     *  This constructor is not needed. it is only here, so I don't have to create my character every time.
      */
     public Player(String name, String history, String profile){
         this.name = name;

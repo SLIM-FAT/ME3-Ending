@@ -1,12 +1,16 @@
 package Mehrbod.MassEffect.ending;
-
 import java.util.concurrent.TimeUnit;
 
+//TODO: Documentation for Master.
 /**
- *
+ * This Class basically runs the game.
+ * @
+ * @author  Mehrbod Mehrabi
  */
-public abstract class Master { // This is the class that runs the game basically.
+public abstract class Master {
 
+    // I'm using a new constructor to not have to create my character everytime.
+    // This line will be deleted in the final build
     protected static final Player player = new Player("mehrbod","soldier", "colonist");
     static Input input;
     public static void init() {

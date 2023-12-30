@@ -1,11 +1,9 @@
 package Mehrbod.MassEffect.ending;
-
 import static Mehrbod.MassEffect.ending.Master.*;
-
 import Mehrbod.MassEffect.ending.Input;
-
 import java.util.List;
 
+//TODO: The Fight class is probably the most complicated and need the most detailed documentation.
 public class Fight {
 
     private Enemy enemy;
